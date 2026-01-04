@@ -1,3 +1,20 @@
-[gd_scene format=3 uid="uid://bceemsywu52j"]
+[gd_scene load_steps=4 format=3 uid="uid://bceemsywu52j"]
+
+[ext_resource type="Texture2D" uid="uid://bre0aqj0xames" path="res://Image Assets/pops.jpg" id="1_evv8d"]
+[ext_resource type="Script" path="res://Scripts/enemyMovement.gd" id="1_qbo5s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjb4a"]
+size = Vector2(128, 128)
 
 [node name="Enemy1" type="CharacterBody2D"]
+script = ExtResource("1_qbo5s")
+metadata/_edit_vertical_guides_ = [-64.0, 64.0]
+metadata/_edit_horizontal_guides_ = [-66.0, -64.0, 64.0]
+
+[node name="Pops" type="Sprite2D" parent="."]
+position = Vector2(-0.5, 0.5)
+scale = Vector2(0.117593, 0.0881945)
+texture = ExtResource("1_evv8d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wjb4a")
