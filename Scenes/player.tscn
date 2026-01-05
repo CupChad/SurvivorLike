@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b4rocvkvo1vge" path="res://Image Assets/icon.svg" id="2_va6l1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7n7we"]
-size = Vector2(119, 49)
+size = Vector2(119, 122.5)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_1tjrg")
@@ -15,7 +15,16 @@ metadata/_edit_horizontal_guides_ = [-64.0]
 texture = ExtResource("2_va6l1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 38)
+position = Vector2(0, 1.25)
 shape = SubResource("RectangleShape2D_7n7we")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(6.55336, 4.38305)
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -565.0
+offset_top = -310.0
+offset_right = -208.0
+offset_bottom = -237.0
+fill_mode = 1
+texture_progress = ExtResource("2_va6l1")

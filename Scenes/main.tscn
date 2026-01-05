@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2ixxagmg7tvm"]
+
+[ext_resource type="PackedScene" uid="uid://c2evov8d782ml" path="res://Scenes/player.tscn" id="2_6a851"]
+[ext_resource type="PackedScene" uid="uid://bceemsywu52j" path="res://Scenes/enemy_1.tscn" id="3_ullgt"]
+
+[node name="main" type="Node2D"]
+
+[node name="world" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="world"]
+offset_left = -1559.0
+offset_top = -809.0
+offset_right = 1494.0
+offset_bottom = 1074.0
+color = Color(0.366875, 0.606781, 0.342611, 1)
+
+[node name="character" type="Node2D" parent="."]
+
+[node name="Player" parent="character" groups=["player"] instance=ExtResource("2_6a851")]
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="Enemy1" parent="enemies" instance=ExtResource("3_ullgt")]
+position = Vector2(-493, 170)
