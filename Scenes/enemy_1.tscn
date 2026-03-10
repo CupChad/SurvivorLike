@@ -4,8 +4,8 @@
 [ext_resource type="Script" path="res://Scripts/enemyMovement.gd" id="1_qbo5s"]
 [ext_resource type="PackedScene" uid="uid://cumctu3v8fpdt" path="res://Scenes/Healthbar.tscn" id="3_l6t2o"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjb4a"]
-size = Vector2(128, 128)
+[sub_resource type="CircleShape2D" id="CircleShape2D_ke2u1"]
+radius = 62.0
 
 [node name="Enemy1" type="CharacterBody2D"]
 script = ExtResource("1_qbo5s")
@@ -18,7 +18,7 @@ scale = Vector2(0.117593, 0.0881945)
 texture = ExtResource("1_evv8d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_wjb4a")
+shape = SubResource("CircleShape2D_ke2u1")
 
 [node name="Healthbar" parent="." instance=ExtResource("3_l6t2o")]
 anchors_preset = 5
