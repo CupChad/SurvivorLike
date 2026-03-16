@@ -9,3 +9,5 @@ func _physics_process(_delta: float) -> void:
 	# Velocity is built in to CharacterBody2D
 	velocity = direction * speed
 	move_and_slide()
+
+# test
