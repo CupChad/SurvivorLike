@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scripts/character_body_movement.gd" id="1_1tjrg"]
 [ext_resource type="Texture2D" uid="uid://b4rocvkvo1vge" path="res://Image Assets/icon.svg" id="2_va6l1"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7n7we"]
-size = Vector2(119, 122.5)
+[sub_resource type="CircleShape2D" id="CircleShape2D_i8d8v"]
+radius = 60.69
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_1tjrg")
@@ -16,7 +16,7 @@ texture = ExtResource("2_va6l1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1.25)
-shape = SubResource("RectangleShape2D_7n7we")
+shape = SubResource("CircleShape2D_i8d8v")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(6.55336, 4.38305)
