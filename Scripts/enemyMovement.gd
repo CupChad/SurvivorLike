@@ -11,3 +11,5 @@ func _physics_process(_delta):
 	# Moves enemy towards player.
 	velocity = direction * speed
 	move_and_slide()
+
+	# Tests
